@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+     
+       <title>Crystal Game</title>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1>Crystal Collector Game</h1></div>
+        </div>
+        <br>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Instructions</h3>
+                <p>INSTRUCTIONS PLACEHOLDER.</p>
+                <p>INSTRUCTIONS PLACEHOLDER.</p>
+                <p>INSTRUCTIONS PLACEHOLDER.</p>
+                <p>INSTRUCTIONS PLACEHOLDER.</p>
+
+            </div>
+        </div>
+        <br>
+           
+        <div class="row box">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Target Score: </h4>
+                        <div id="scoreTarget"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Gem Cumulative Score: </h4>
+                        <div id="gemScore"></div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Wins: </h4>
+                        <div id="wins"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Losses: </h4> 
+                        <div id="losses"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='button1'>
+                    <img src="assets/images/emerald.jpg" alt="emerald crystal">
+                </button>
+                <div id="num1val">0</div>
+            </div>
+            
+
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='button2'>
+                    <img src="assets/images/ruby.jpg" alt="ruby crystal">
+                </button>
+                <div id="num2val">0</div>
+            </div>
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='button3'>
+                    <img src="assets/images/sapphire.jpg" alt="sapphire crystal">
+                </button>
+                <div id="num3val">0</div>
+            </div>
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='button4'>
+                    <img src="assets/images/peridot.jpg" alt="peridot crystal">
+                </button>
+               <div id="num4val">0</div> 
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer fixed-bottom">
+       <p>FOOTER/p>
+    </footer>
+    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
