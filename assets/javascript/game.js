@@ -20,20 +20,18 @@ $(document).ready(function() {
             console.log("crystal3num = " + crystal3num);
             console.log("crystal4num = " + crystal4num); 
 
-      $("#button1").on("click", function() {
+                   
+         $("#button1").on("click", function() {
          crystalSum = crystalSum + crystal1num;
          $("#gemScore").text(crystalSum);
-         $("#num1val").text(crystal1num);
          checkScore();
         // console.log("crystal1 clicked: " + crystal1num);
          console.log("crystalSum: " + crystalSum);
-
       });
 
       $("#button2").on("click", function() {
          crystalSum = crystalSum + crystal2num;
          $("#gemScore").text(crystalSum);
-         $("#num2val").text(crystal2num);
          checkScore();
         // console.log("crystal2 clicked: " + crystal2num);
          console.log("crystalSum: " + crystalSum);
@@ -42,7 +40,6 @@ $(document).ready(function() {
       $("#button3").on("click", function() {
          crystalSum = crystalSum + crystal3num;
          $("#gemScore").text(crystalSum);
-         $("#num3val").text(crystal3num);
          checkScore();
         // console.log("crystal3 clicked: " + crystal3num);
          console.log("crystalSum: " + crystalSum);
@@ -51,7 +48,6 @@ $(document).ready(function() {
       $("#button4").on("click", function() {
          crystalSum = crystalSum + crystal4num;
          $("#gemScore").text(crystalSum);
-         $("#num4val").text(crystal4num);
          checkScore();
         // console.log("crystal4 clicked: " + crystal4num);
          console.log("crystalSum: " + crystalSum);
@@ -59,11 +55,13 @@ $(document).ready(function() {
 
       function checkScore() {
             if (crystalSum === targetnum) {
+               playAudio()
                console.log("You Win");
                wins++;
                fncReset();
             }
             else if (crystalSum > targetnum) {
+               playAudio_1()
                console.log("You Lose");
                losses++;
                fncReset();
@@ -88,4 +86,15 @@ $(document).ready(function() {
             console.log("crystal3num = " + crystal3num);
             console.log("crystal4num = " + crystal4num);
       } 
-});
+
+      function playAudio() { 
+         var x = document.getElementById("myAudio"); 
+         x.play(); 
+       } 
+
+       function playAudio_1() { 
+         var x = document.getElementById("myAudio_1"); 
+         x.play(); 
+       } 
+  
+      });

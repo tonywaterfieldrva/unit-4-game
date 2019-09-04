@@ -10,7 +10,15 @@
        <title>Crystal Game</title>
     </head>
 
-<body>
+
+ <body background = "assets/images/html_background.jpg">
+        <audio id="myAudio">
+                <source id="splash" src="assets/images/ta-da.wav" type="audio/wav">
+        </audio>
+        <audio id="myAudio_1">
+                <source id="splash" src="assets/images/buzzer.wav" type="audio/wav">
+        </audio>
+            
     <div class="container">
         <div class="row">
             <div class="col-md-12"><h1>Crystal Collector Game</h1></div>
@@ -19,27 +27,36 @@
         
         <div class="row">
             <div class="col-md-12">
-                <h3>Instructions</h3>
-                <p>INSTRUCTIONS PLACEHOLDER.</p>
-                <p>INSTRUCTIONS PLACEHOLDER.</p>
-                <p>INSTRUCTIONS PLACEHOLDER.</p>
-                <p>INSTRUCTIONS PLACEHOLDER.</p>
+                <h4>Instructions</h4>
+                <p>A random number between 19 and 120 will be chosen and that is the Target Points you are attempting to match.</p>
+                <p>The four crytals displayed are assigned a points number between 1 and 12</p>
+                <p>Each click of a crystal will add to the Gem Points.</p>
+                <p>You Win if you Match the Target Points, you Lose if you exceed the Target Points.</p>
+                <p>A Victory or Buzzer sound will play and the Win/Loss tally will update. The game will reset and begin a new game.</p>
 
             </div>
         </div>
         <br>
-           
-        <div class="row box">
+ <!--       <div class="col-md-12">
+            <div id="game_over_msg">game_over_msg</div>
+        </div>
+        <br>
+    -->
+           <div class="row box">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h4>Target Score: </h4>
+                    <div class="col-md-4">
+                        <h4>Target Points:</h4>
+                    </div>
+                    <div class="col-md-4">
                         <div id="scoreTarget"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <h4>Gem Cumulative Score: </h4>
+                    <div class="col-md-4">
+                        <h4>Gem  Points:</h4>
+                    </div>
+                    <div class="col-md-4">
                         <div id="gemScore"></div>
                     </div>
                 </div>
@@ -47,14 +64,18 @@
            
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-4">
                         <h4>Wins: </h4>
+                    </div>
+                    <div class="col-md-4">    
                         <div id="wins"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <h4>Losses: </h4> 
+                    <div class="col-md-4">
+                        <h4>Losses: </h4>
+                    </div>
+                    <div class="col-md-4">
                         <div id="losses"></div>
                     </div>
                 </div>
@@ -67,35 +88,30 @@
                 <button class='crystalButton' id='button1'>
                     <img src="assets/images/emerald.jpg" alt="emerald crystal">
                 </button>
-                <div id="num1val">0</div>
+ 
             </div>
-            
-
             <div class="col-md-3 crystal">
                 <button class='crystalButton' id='button2'>
                     <img src="assets/images/ruby.jpg" alt="ruby crystal">
                 </button>
-                <div id="num2val">0</div>
+ 
             </div>
             <div class="col-md-3 crystal">
                 <button class='crystalButton' id='button3'>
                     <img src="assets/images/sapphire.jpg" alt="sapphire crystal">
                 </button>
-                <div id="num3val">0</div>
+ 
             </div>
             <div class="col-md-3 crystal">
                 <button class='crystalButton' id='button4'>
                     <img src="assets/images/peridot.jpg" alt="peridot crystal">
                 </button>
-               <div id="num4val">0</div> 
+  
             </div>
         </div>
     </div>
 
-    <footer class="footer fixed-bottom">
-       <p>FOOTER/p>
-    </footer>
-    
+      
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
     <script src="assets/javascript/game.js"></script>
